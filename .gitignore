@@ -1,0 +1,5 @@
+# Ignore data folder because it's protected data
+data/
+
+# Ignore any .env file
+.env

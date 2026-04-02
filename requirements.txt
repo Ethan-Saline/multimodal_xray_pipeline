@@ -1,0 +1,11 @@
+psycopg2-binary
+faiss-cpu
+redis
+numpy
+python-dotenv
+torch
+torchvision
+hi-ml-multimodal
+pydicom
+Pillow
+scikit-learn

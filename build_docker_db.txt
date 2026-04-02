@@ -1,0 +1,10 @@
+docker run -d --name chexpert-postgres --restart unless-stopped `
+  -p 5432:5432 `
+  -e POSTGRES_PASSWORD=postgres `
+  -v chexpert-pgdata:/var/lib/postgresql/data `
+  postgres:15
+
+docker run -d --name chexpert-redis --restart unless-stopped `
+  -p 6379:6379 `
+  -v chexpert-redisdata:/data `
+  redis:7-alpine --appendonly yes
